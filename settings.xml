@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
           xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-    <server>
-    <id>bintray-galacticfrog-simpleFXML</id>
-    <username>galacticfrog</username>
-    <password>f59abe69b8821aca71dc7868854b63af0d15b004</password>
-</server>
+    
+    <servers>
+        <server>
+            <id>bintray-galacticfrog-simpleFXML</id>
+            <username>galacticfrog</username>
+            <password>f59abe69b8821aca71dc7868854b63af0d15b004</password>
+        </server>
+    </servers>
     <profiles>
         <profile>
             <repositories>
