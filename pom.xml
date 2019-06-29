@@ -21,6 +21,8 @@
         <spring-framework.version>5.1.8.RELEASE</spring-framework.version>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <slf4j.version>1.7.25</slf4j.version>
+        <bintray.repo>bintray-examples/repo</bintray.repo>
+        <bintray.package>maven-example</bintray.package>
     </properties>
 
     <scm>
@@ -118,12 +120,13 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+<distributionManagement>
+   <repository>
+      <id>bintray-[YOUR_USERNAME]-<REPOSITORY_NAME></id>
+      <name>[YOUR_USERNAME]-<REPOSITORY_NAME></name>
+      <url>https://api.bintray.com/maven/[YOUR_USERNAME]/<REPOSITORY_NAME>/[PACKAGE_NAME]/;publish=1</url>
+   </repository>
+</distributionManagement>
 
     <build>
         <plugins>

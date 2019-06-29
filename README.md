@@ -4,9 +4,6 @@
 Spring Boot and JavaFx - A perfect team!
 Build your JavaFX Application with spring boot features
 
-=============================
-simpleFXML
-=============================
 
 This small library links Spring Boot with JavaFx 8 or higher. 
 Let all your view and controller classes be Spring Beans and make use of all features in the Spring Framework Universe. 
