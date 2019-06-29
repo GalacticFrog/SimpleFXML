@@ -1,12 +1,10 @@
 package edu.unsch.simplefxml;
 
-import edu.unsch.simplefxml.PropertyReaderHelper;
+import java.util.List;
 import org.hamcrest.collection.*;
 import org.junit.jupiter.api.*;
 import org.mockito.*;
 import org.springframework.core.env.*;
-
-import java.util.*;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
