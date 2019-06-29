@@ -16,9 +16,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>central</id>
+                    <id>bintray-galacticfrog-simpleFXML</id>
                     <name>bintray</name>
-                    <url>https://jcenter.bintray.com</url>
+                    <url>https://dl.bintray.com/galacticfrog/simpleFXML</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -26,9 +26,9 @@
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
-                    <id>central</id>
+                    <id>bintray-galacticfrog-simpleFXML</id>
                     <name>bintray-plugins</name>
-                    <url>https://jcenter.bintray.com</url>
+                    <url>https://dl.bintray.com/galacticfrog/simpleFXML</url>
                 </pluginRepository>
             </pluginRepositories>
             <id>bintray</id>
