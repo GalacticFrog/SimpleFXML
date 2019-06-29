@@ -121,11 +121,11 @@
     </dependencies>
 
 <distributionManagement>
-   <repository>
-      <id>bintray-[YOUR_USERNAME]-<REPOSITORY_NAME></id>
-      <name>[YOUR_USERNAME]-<REPOSITORY_NAME></name>
-      <url>https://api.bintray.com/maven/[YOUR_USERNAME]/<REPOSITORY_NAME>/[PACKAGE_NAME]/;publish=1</url>
-   </repository>
+    <repository>
+        <id>bintray-galacticfrog-simpleFXML</id>
+        <name>galacticfrog-simpleFXML</name>
+        <url>https://api.bintray.com/maven/galacticfrog/simpleFXML/simpleFXML/;publish=1</url>
+    </repository>
 </distributionManagement>
 
     <build>
