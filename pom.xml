@@ -5,7 +5,7 @@
 
     <groupId>edu.unsch.epis</groupId>
     <artifactId>simpleFXML</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>1.0.0-Final</version>
     <packaging>jar</packaging>
     <name>simpleFXML</name>
     <description>Support for Spring Boot and JavaFX 8</description>
