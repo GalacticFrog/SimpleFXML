@@ -8,7 +8,7 @@
     <version>1.0.0-Final</version>
     <packaging>jar</packaging>
     <name>simpleFXML</name>
-    <description>Support for Spring Boot and JavaFX 8</description>
+    <description>Support for Spring Boot and JavaFX</description>
     <url>https://github.com/GalacticFrog/simpleFXML</url>
 
     <properties>
