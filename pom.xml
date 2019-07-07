@@ -120,13 +120,13 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>bintray-galacticfrog-simpleFXML</id>
-            <name>galacticfrog-simpleFXML</name>
-            <url>https://api.bintray.com/maven/galacticfrog/simpleFXML/simpleFXML/;publish=1</url>
-        </repository>
-    </distributionManagement>
+<distributionManagement>
+	<repository>
+		<id>bintray-GalacticFrog-JAVAFX</id>
+		<name>galacticfrog-JAVAFX</name>
+		<url>https://api.bintray.com/maven/galacticfrog/JAVAFX/simpleFXML/;publish=1</url>
+	</repository>
+</distributionManagement>
 
     <build>
         <plugins>
