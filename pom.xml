@@ -5,7 +5,7 @@
 
     <groupId>edu.unsch.epis</groupId>
     <artifactId>simpleFXML</artifactId>
-    <version>1.0.0-Final</version>
+    <version>1.0.1-Release</version>
     <packaging>jar</packaging>
     <name>simpleFXML</name>
     <description>Spring Boot and JavaFX Support library</description>
@@ -50,26 +50,23 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring-framework.version}</version>
-            <scope>provided</scope>
+            <version>${spring-framework.version}</version>            
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
             <version>${spring-boot.version}</version>
-            <scope>provided</scope>
+            
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring-boot.version}</version>
-            <scope>provided</scope>
+            <version>${spring-boot.version}</version>            
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>provided</scope>
+            <version>${slf4j.version}</version>            
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -120,17 +117,17 @@
         </dependency>
     </dependencies>
 
-<distributionManagement>
-	<repository>
-		<id>bintray-GalacticFrog-JAVAFX</id>
-		<name>galacticfrog-JAVAFX</name>
-		<url>https://api.bintray.com/maven/galacticfrog/JAVAFX/simpleFXML/;publish=1</url>
-	</repository>
-</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>bintray-GalacticFrog-JAVAFX</id>
+            <name>galacticfrog-JAVAFX</name>
+            <url>https://api.bintray.com/maven/galacticfrog/JAVAFX/simpleFXML/;publish=1</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
-           <!--  <plugin>
+            <!--  <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.3</version>
