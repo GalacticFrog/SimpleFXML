@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.unsch.epis</groupId>
-    <artifactId>simpleFXML</artifactId>
+    <artifactId>SimpleFXML</artifactId>
     <version>1.0.0-Final</version>
     <packaging>jar</packaging>
-    <name>simpleFXML</name>
+    <name>SimpleFXML</name>
     <description>Spring Boot and JavaFX Support library</description>
-    <url>https://github.com/GalacticFrog/simpleFXML</url>
+    <url>https://github.com/GalacticFrog/SimpleFXML</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,15 +20,13 @@
         <testfx.version>4.0.8-alpha</testfx.version>
         <spring-framework.version>5.1.8.RELEASE</spring-framework.version>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
-        <slf4j.version>1.7.25</slf4j.version>
-        <bintray.repo>bintray-examples/repo</bintray.repo>
-        <bintray.package>maven-example</bintray.package>
+        <slf4j.version>1.7.25</slf4j.version>        
     </properties>
 
     <scm>
-        <connection>git@github.com:GalacticFrog/simpleFXML.git</connection>
+        <connection>git@github.com:GalacticFrog/SimpleFXML.git</connection>
         <developerConnection>git@github.com:GalacticFrog/simpleFXML.git</developerConnection>
-        <url>https://github.com/GalacticFrog/simpleFXML</url>
+        <url>https://github.com/GalacticFrog/SimpleFXML</url>
     </scm>
 
     <developers>
@@ -55,8 +53,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
-            <version>${spring-boot.version}</version>
-            
+            <version>${spring-boot.version}</version>            
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -121,7 +118,7 @@
         <repository>
             <id>bintray-GalacticFrog-JAVAFX</id>
             <name>galacticfrog-JAVAFX</name>
-            <url>https://api.bintray.com/maven/galacticfrog/JAVAFX/simpleFXML/;publish=1</url>
+            <url>https://api.bintray.com/maven/galacticfrog/JAVAFX/SimpleFXML/;publish=1</url>
         </repository>
     </distributionManagement>
 
