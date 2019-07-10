@@ -1,5 +1,5 @@
 
-# simpleFXML springboot javafx integration
+# SimpleFXML springboot javafx integration.
 
 Spring Boot and JavaFx - A perfect team!
 Build your JavaFX Application with spring boot features
@@ -115,7 +115,7 @@ public class HelloworldController {
     }
 }
 ```
-The exmaple service class.
+The example service class.
 ```java
 public interface AwesomeActionService {
     String processName(String name);
