@@ -9,8 +9,8 @@ This small library links Spring Boot with JavaFx.
 Let all your view and controller classes be Spring Beans and make use of all features in the Spring Framework Universe. 
 
 ## 0. Prerequisites 
-- ** You will at least need JDK 1.8 or higher.
-- ** [Spring Boot 2](https://spring.io/projects/spring-boot)** via Maven
+- You will at least need JDK 1.8 or higher.
+- [Spring Boot 2](https://spring.io/projects/spring-boot)** via Maven
 ## 1. Installing
 You can get the latest version of SimpleFXML directly from Bintray’s JCenter repository. 
 
@@ -42,6 +42,22 @@ dependencies {
     compile 'edu.unsch.epis:SimpleFXML:1.0.0-Final'
 }
 ```
+**NOTE: if use java 11 or higher, JavaFX was removed from the SDK. It is now in its own separate module, and if you want to use it in your application you will need to specifically include it.
+```xml
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>11</version>
+</dependency>
+<dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-fxml</artifactId>
+    <version>11</version>
+</dependency>
+etc...
+```
+
+
 
 ## 2. Generate your GUI with FXML using SceneBuilder
 You find SceneBuilder here: http://gluonhq.com/open-source/scene-builder/
