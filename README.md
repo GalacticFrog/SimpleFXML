@@ -9,8 +9,8 @@ This small library links Spring Boot with JavaFx.
 Let all your view and controller classes be Spring Beans and make use of all features in the Spring Framework Universe. 
 
 ## 0. Prerequisites 
-- **You will at least need JDK 1.8 or higher.
-- **[Spring Boot 2](https://spring.io/projects/spring-boot)** via Maven
+- ** You will at least need JDK 1.8 or higher.
+- ** [Spring Boot 2](https://spring.io/projects/spring-boot)** via Maven
 ## 1. Installing
 You can get the latest version of SimpleFXML directly from Bintray’s JCenter repository. 
 
