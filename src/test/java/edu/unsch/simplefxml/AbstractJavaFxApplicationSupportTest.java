@@ -2,7 +2,7 @@ package edu.unsch.simplefxml;
 
 import edu.unsch.jfxtest.TestApp;
 import edu.unsch.jfxtest.SampleView;
-import edu.unsch.simplefxml.AbstractJavaFxApplicationSupport;
+import edu.unsch.simplefxml.FxApplication;
 import edu.unsch.simplefxml.SplashScreen;
 import org.hamcrest.*;
 import org.junit.jupiter.api.*;
@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 public class AbstractJavaFxApplicationSupportTest {
 
-    private AbstractJavaFxApplicationSupport app;
+    private FxApplication app;
 
     @BeforeAll
     public static void beforeClass() {

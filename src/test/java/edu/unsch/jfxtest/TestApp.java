@@ -1,7 +1,7 @@
 package edu.unsch.jfxtest;
 
-import edu.unsch.simplefxml.AbstractJavaFxApplicationSupport;
+import edu.unsch.simplefxml.FxApplication;
 
-public class TestApp extends AbstractJavaFxApplicationSupport {
+public class TestApp extends FxApplication {
 
 }

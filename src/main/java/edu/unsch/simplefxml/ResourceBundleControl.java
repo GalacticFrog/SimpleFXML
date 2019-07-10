@@ -16,8 +16,8 @@ import static java.util.Objects.requireNonNull;
  * Control that uses a custom {@link Charset} when reading resource bundles,
  * compared to the default charset which is ISO-8859-1.
  *
- * @author Emil Forslund
- * @since  2.1.6
+ * @author Wilber Flores
+ * @since 2.1.6
  */
 public final class ResourceBundleControl extends ResourceBundle.Control {
 
@@ -29,18 +29,18 @@ public final class ResourceBundleControl extends ResourceBundle.Control {
 
     @Override
     public ResourceBundle newBundle(
-        final String baseName,
-        final Locale locale,
-        final String format,
-        final ClassLoader loader,
-        final boolean reload)
-    throws IllegalAccessException, InstantiationException, IOException {
+            final String baseName,
+            final Locale locale,
+            final String format,
+            final ClassLoader loader,
+            final boolean reload)
+            throws IllegalAccessException, InstantiationException, IOException {
 
         final String bundleName = toBundleName(baseName, locale);
         final String resourceName = toResourceName(bundleName, "properties");
 
         ResourceBundle bundle = null;
-        InputStream stream    = null;
+        InputStream stream = null;
         if (reload) {
             URL url = loader.getResource(resourceName);
             if (url != null) {
@@ -57,7 +57,7 @@ public final class ResourceBundleControl extends ResourceBundle.Control {
         if (stream != null) {
             try {
                 bundle = new PropertyResourceBundle(new InputStreamReader(
-                    stream, charset));
+                        stream, charset));
             } finally {
                 stream.close();
             }

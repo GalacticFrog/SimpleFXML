@@ -10,7 +10,6 @@ import org.springframework.core.env.Environment;
  * The utility PropertyReaderHelper.
  *
  * @author Wilber Flores
- * @author Andreas Jay
  */
 public class PropertyReaderHelper {
 

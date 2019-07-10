@@ -7,11 +7,10 @@ import javafx.scene.layout.VBox;
 
 /**
  * A default standard splash pane implementation Subclass it and override it's
- * methods to customize with your own behavior. Be aware that you can not use
- * Spring features here yet.
+ * methods to customize with your own behavior. NOTE: Be aware that you can not
+ * use Spring features here yet.
  *
  * @author Wilber Flores
- * @author Andreas Jay
  */
 public class SplashScreen {
 

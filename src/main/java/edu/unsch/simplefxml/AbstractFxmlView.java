@@ -48,9 +48,7 @@ import org.springframework.util.StringUtils;
  * {@link FXView}
  * </p>
  *
- * @author Thomas Darimont
  * @author Wilber Flores
- * @author Andreas Jay
  *
  */
 public abstract class AbstractFxmlView implements ApplicationContextAware {
@@ -407,8 +405,8 @@ public abstract class AbstractFxmlView implements ApplicationContextAware {
 
     /**
      * Does not initialize the view. Only registers the Consumer and waits until
- the the view is going to be created / the method FXView#getView or
- FXView#getViewAsync invoked.
+     * the the view is going to be created / the method FXView#getView or
+     * FXView#getViewAsync invoked.
      *
      * @param presenterConsumer listener for the presenter construction
      */
@@ -433,8 +431,8 @@ public abstract class AbstractFxmlView implements ApplicationContextAware {
     /**
      * Gets the conventional name.
      *
-     * @return the name of the view without the "FXView" prefix in lowerCase. For
- AirhacksView just airhacks is going to be returned.
+     * @return the name of the view without the "FXView" prefix in lowerCase.
+     * For AirhacksView just airhacks is going to be returned.
      */
     private String getConventionalName() {
         return stripEnding(getClass().getSimpleName().toLowerCase());

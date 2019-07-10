@@ -23,14 +23,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
- * The Class AbstractJavaFxApplicationSupport.
+ * The Entrance of javafx spring-boot application. The execution on the VM and
+ * JavaFX Thread it is not guaranteed
  *
  * @author Wilber Flores
  */
 @SuppressWarnings("WeakerAccess")
-public abstract class AbstractJavaFxApplicationSupport extends Application {
+public abstract class FxApplication extends Application {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(AbstractJavaFxApplicationSupport.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(FxApplication.class);
 
     private static String[] savedArgs = new String[0];
 
@@ -48,7 +49,7 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
 
     private final CompletableFuture<Runnable> splashIsShowing;
 
-    protected AbstractJavaFxApplicationSupport() {
+    protected FxApplication() {
         splashIsShowing = new CompletableFuture<>();
     }
 
@@ -123,7 +124,7 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
         GUIState.setHostServices(this.getHostServices());
         final Stage splashStage = new Stage(StageStyle.TRANSPARENT);
 
-        if (AbstractJavaFxApplicationSupport.splashScreen.visible()) {
+        if (FxApplication.splashScreen.visible()) {
             final Scene splashScene = new Scene(splashScreen.getParent(), Color.TRANSPARENT);
             splashStage.setScene(splashScene);
             splashStage.getIcons().addAll(defaultIcons);
@@ -134,7 +135,7 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
 
         splashIsShowing.complete(() -> {
             showInitialView();
-            if (AbstractJavaFxApplicationSupport.splashScreen.visible()) {
+            if (FxApplication.splashScreen.visible()) {
                 splashStage.hide();
                 splashStage.setScene(null);
             }
@@ -161,7 +162,7 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
      * Launch application view.
      */
     private void launchApplicationView(final ConfigurableApplicationContext ctx) {
-        AbstractJavaFxApplicationSupport.applicationContext = ctx;
+        FxApplication.applicationContext = ctx;
     }
 
     /**
@@ -282,9 +283,9 @@ public abstract class AbstractJavaFxApplicationSupport extends Application {
         savedArgs = args;
 
         if (splashScreen != null) {
-            AbstractJavaFxApplicationSupport.splashScreen = splashScreen;
+            FxApplication.splashScreen = splashScreen;
         } else {
-            AbstractJavaFxApplicationSupport.splashScreen = new SplashScreen();
+            FxApplication.splashScreen = new SplashScreen();
         }
 
         if (SystemTray.isSupported()) {

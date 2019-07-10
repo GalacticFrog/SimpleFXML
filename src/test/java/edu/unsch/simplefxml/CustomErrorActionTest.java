@@ -3,7 +3,7 @@ package edu.unsch.simplefxml;
 import edu.unsch.jfxtest.SampleIncorrectView;
 import edu.unsch.jfxtest.TestApp;
 import edu.unsch.jfxtest.SampleView;
-import edu.unsch.simplefxml.AbstractJavaFxApplicationSupport;
+import edu.unsch.simplefxml.FxApplication;
 import edu.unsch.simplefxml.SplashScreen;
 import javafx.scene.image.Image;
 import org.hamcrest.CoreMatchers;
@@ -17,7 +17,7 @@ import static org.mockito.Mockito.*;
 
 public class CustomErrorActionTest {
 
-    private AbstractJavaFxApplicationSupport app;
+    private FxApplication app;
 
     ErrorAction errorAction;
 
@@ -45,7 +45,7 @@ public class CustomErrorActionTest {
 //    @Test
 //    @DisplayName ("Custom error action is executed")
 //    public void loadDefaultIcons() {
-//        AbstractJavaFxApplicationSupport.showInitialView(SampleIncorrectView.class);
+//        FxApplication.showInitialView(SampleIncorrectView.class);
 //        verify(errorAction, times(2)).action();
 //    }
 }
